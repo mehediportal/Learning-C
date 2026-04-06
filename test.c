@@ -1,15 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    printf("1\n");
-    printf("2\n");
-    printf("3\n");
-    printf("4\n");
-    printf("5\n");
-    printf("6\n");
-    printf("7\n");
-    printf("8\n");
-    printf("9\n");
-    printf("10");
+    int i = 0;
+    for(i=1; i<=10; i++){
+        if(i==3){
+            continue;
+        }
+        printf("%d\n", i);
+    }
     return 0;
 }

@@ -1,12 +1,16 @@
 //ইউজার একটি নাম্বার N ইনপুট দিবে। ১ থেকে N পর্যন্ত যতগুলো বেজোড় (Odd) সংখ্যা আছে, তাদের যোগফল বের করো?
 
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int n, i;
-    printf("Enter a Number: ");
+int main() {
+    int n, i, sum = 0;
+    printf("Enter a number: ");
     scanf("%d", &n);
-    i = (n+1)/2;
-    printf("1 to %d odd value sum is: %d ", n, i*i);
+    for(i=1; i<=n; i++) {
+        if(i%2 !=0){
+            sum = sum + i;
+        }
+    }
+    printf("Odd value is from 1 to %d: %d ", n, sum);
     return 0;
 }
